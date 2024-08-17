@@ -1,0 +1,56 @@
+mat-card {
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+span.completed {
+    text-decoration: line-through;
+    padding-left: 6px;
+}
+
+mat-list-item {
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+    .delete-todo-btn {
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+    &:hover {
+        .delete-todo-btn {
+            display: inline;
+        }
+    }
+}
+
+mat-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #757575;
+  
+    @media screen and (max-width: 375px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+
+.filter-container {
+    display: flex;
+    gap: 1rem;
+    button {
+      padding: 0 0.5rem;
+      &.active-filter {
+        color: #6200ea;
+      }
+    }
+  
+    &.filter-container--mobile {
+      margin-top: 1rem;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }

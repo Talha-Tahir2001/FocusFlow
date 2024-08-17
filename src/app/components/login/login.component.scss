@@ -1,0 +1,57 @@
+/* Styles for the login component */
+
+mat-card {
+    max-width: 500px; /* Increase the width */
+    padding: 2rem; /* Add padding for spacing */
+    margin: 5rem auto; /* Center the card and add margin at the top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 10px; /* Slightly rounded corners */
+  }
+  
+  mat-card-title {
+    font-size: 2rem; /* Increase the size of the title */
+    text-align: center; /* Center the title */
+    font-weight: bold; /* Make the title bold */
+    color: #333; /* Adjust color for better readability */
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increase the gap between form fields */
+  }
+  
+  mat-form-field {
+    width: 100%;
+    font-size: 1.2rem; /* Increase the font size of the input fields */
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: space-between; /* Spread out the buttons */
+    margin-top: 1.5rem; /* Add some spacing at the top */
+  }
+  
+  button {
+    width: 30%; /* Set the button width */
+    font-size: 1rem; /* Adjust the font size */
+    font-weight: bold; /* Make the button text bold */
+    padding: 0.8rem 1.2rem; /* Increase padding */
+  }
+  
+  .dark-theme {
+    mat-card {
+      background-color: #333; /* Dark theme background */
+      color: #fff; /* Text color for dark theme */
+    }
+  
+    mat-form-field {
+      color: #fff; /* Form field color for dark theme */
+    }
+  
+    button {
+      background-color: #444; /* Button background for dark theme */
+      color: #fff; /* Button text color for dark theme */
+    }
+  }
+  
